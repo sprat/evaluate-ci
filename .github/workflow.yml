@@ -1,0 +1,9 @@
+---
+name: foo
+on: [push]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - run: vboxmanage --version
+      - run: vagrant version
