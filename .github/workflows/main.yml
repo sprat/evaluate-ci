@@ -1,5 +1,5 @@
 ---
-name: foo
+name: main
 on: [push]
 jobs:
   build:
@@ -7,3 +7,4 @@ jobs:
     steps:
       - run: vboxmanage --version
       - run: vagrant version
+      - run: packer version
